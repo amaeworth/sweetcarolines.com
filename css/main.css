@@ -94,19 +94,87 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* ========================
+  Fonts
+=========================*/
+@font-face {
+    font-family: 'droidserif';
+    src: url('../fonts/droidserif.ttf') format('truetype'),
+         url('../fonts/droidserif-webfont.woff') format('woff'),
+         url('../fonts/droidserif-webfont.woff2') format('woff2');
+}
+h1{
+  font-family: 'Lobster', cursive;
+  font-size: 2.5em;
+  color:#464a55;
+  text-align: center;
+  width:90%;
+}
+a{
+  text-decoration: none;
+  color:#464a55;
+}
 
+/* ========================
+  Header
+=========================*/
+.logo img{
+  width:10%;
+  float:left;
+  padding-left: 10%;
+}
+nav{
+  width:100%;
+}
+nav ul{
+  width:100%;
+  display: flex;
+  flex-flow: row;
+  padding:0;
+}
+nav li{
+  font-family: 'droidserif', serif;
+  font-size: 1.75em;
+  list-style: none;
+  text-align: center;
+  width:30%;
+}
+/* ========================
+  Body
+=========================*/
+/* ========================
+  Home
+=========================*/
+/*using flex*/
+.wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper img{
+  width:100%;
+}
+.column{
+  flex:50%;
+  max-width:50%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+/* ========================
+  Footer
+=========================*/
+footer{
+  background-color:#49bd90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer img{
+  width:10%;
+  padding:2%;
+  margin:auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 
@@ -280,3 +348,46 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+/*testing using grid*/
+/*.flex-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}*/
+/*.wrapper{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template: "a b"
+                 "c d"
+                 "e f"
+                 "g h";
+  width:100%;
+}
+.wrapper img{
+  width:100%;
+}
+.wrapper:nth-child(1){
+  grid-area:a;
+}
+.wrapper:nth-child(2){
+  grid-area:b;
+}
+.wrapper:nth-child(3){
+  grid-area:c;
+}
+.wrapper:nth-child(4){
+  grid-area:d;
+}
+.wrapper:nth-child(5){
+  grid-area:e;
+}
+.wrapper:nth-child(6){
+  grid-area:f;
+}
+.wrapper:nth-child(7){
+  grid-area:g;
+}
+.wrapper:nth-child(8){
+  grid-area:h;
+}*/
