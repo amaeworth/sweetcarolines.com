@@ -120,6 +120,11 @@ a{
   text-decoration: none;
   color:#464a55;
 }
+p{
+  font-size: 1.2em;
+  font-family: 'raleway', sans-serif;
+  color:#464a55;
+}
 
 /* ========================
   Header
@@ -145,6 +150,12 @@ nav li{
   list-style: none;
   text-align: center;
   width:30%;
+}
+nav #current a{
+  color:#49bd90;
+}
+nav a:hover{
+  color:#49bd90;
 }
 /* ========================
   Body
@@ -183,12 +194,76 @@ nav li{
   width:92%;
   padding:4%;
   grid-area:text;
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: 'raleway', sans-serif;
   color:#464a55;
   text-align: justify;
 }
-
+.testimonials p{
+  width:92%;
+  padding:4%;
+  text-align: center;
+  font-size: 1.3em;
+  font-family: 'droidserif';
+  color:#464a55;
+}
+.testimonials span{
+  font-size: 2em;
+  line-height: .5em;
+}
+#background-color{
+  background-color: #464a55;
+  color:#ffffff;
+}
+/* ========================
+  Contact
+=========================*/
+.contact{
+  border-bottom: .1em solid #49bd90;
+  padding: 0 5% 5% 5%;
+}
+#mc_embed_signup{
+  border: 1.5em solid #393d48;
+}
+form{
+  padding:2%;
+  width:96%;
+}
+.mc-field-group, .mc-field-group-mo{
+  /*display:flex;*/
+  padding:2%;
+  font-family: 'raleway';
+}
+.mc-field-group input{
+  /*display:flex;*/
+  border:.1em solid #464a55;
+  width:100%;
+}
+.mc-field-group-mo input{
+  /*display:flex;*/
+  border:.1em solid #464a55;
+}
+#mce-MMERGE4{
+  height:100px;
+  width:100%;
+}
+.button{
+  background-color: #49bd90;
+  color:#ffffff;
+  font-family: 'Lobster';
+  width:100%;
+  font-size: 1.3em;
+}
+.location p{
+  text-align: center;
+}
+.map iframe{
+  width:100%;
+}
+.map {
+  border: 1.5em solid #393d48;
+  margin: 0 5% 5% 5%;
+}
 /* ========================
   Footer
 =========================*/
