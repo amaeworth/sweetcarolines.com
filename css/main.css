@@ -436,6 +436,79 @@ footer img{
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
   /*Styles*/
+  /*.logo{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    width:100%;
+  }*/
+  .reduce-width, .content{
+    width:90%;
+    padding:0 5% 0 5%;
+  }
+  .content p{
+    width: 60%;
+    padding: 10% 20% 0 20%;
+    font-size:1.8em;
+  }
+  #mc_embed_signup{
+    width:60%;
+    margin: 0 20% 0 20%;
+  }
+  header{
+    border-bottom: .1em solid #49bd90;
+  }
+  .header-wrapper{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo{
+    width:30%;
+    padding:0;
+  }
+  .logo h1{
+    padding:0;
+  }
+  .logo-img{
+    width:50%;
+  }
+  .logo img{
+    width:50%;
+    /*padding-right:2%;
+    text-align: right;*/
+    /*padding-left:70%;*/
+    padding-left:30%;
+    /*float:right;*/
+  }
+  nav{
+    width:60%;
+    float:right;
+    border-bottom: none;
+    display: flex;
+  }
+  footer img{
+    width:5%;
+  }
+  .location-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width:100%;
+  }
+  .location p{
+    text-align: left;
+    padding-left: 5%;
+  }
+  .map iframe{
+    width:100%;
+  }
+  .map {
+    border: 1.5em solid #393d48;
+    margin: 0 5% 5% 5%;
+    width:60%;
+  }
 }
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
