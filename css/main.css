@@ -228,6 +228,7 @@ nav a:hover{
 form{
   padding:2%;
   width:96%;
+  font-size: 1em;
 }
 .mc-field-group, .mc-field-group-mo{
   /*display:flex;*/
@@ -281,10 +282,6 @@ footer img{
   align-items: center;
   justify-content: center;
 }
-
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -365,10 +362,81 @@ footer img{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) {
+/* Styles */
+  .logo{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    width:100%;
+  }
+  .logo-img{
+    width:50%;
+  }
+  .logo img{
+    width:20%;
+    padding-right:2%;
+    text-align: right;
+    padding-left:70%;
+    /*padding-left:30%;*/
+    /*float:right;*/
+  }
+  h1, h2 {
+    width:100%;
+    text-align: left;
+    font-size: 3.2em;
+  }
+  h2{
+    width:98%;
+  }
+  a {
+    width:100%;
+    text-align: center;
+  }
+  nav a{
+    font-size: 1.5em;
+  }
+  .content{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template: "img text";
+    grid-gap:2%;
+    padding:0;
+  }
+  .content img{
+    width:96%;
+    grid-area: img;
+    padding:2%;
+  }
+  .content p{
+    padding:5%;
+    width:90%;
+    font-size: 1.5em;
+  }
+  .testimonials p{
+    font-size: 1.8em;
+  }
+  .testimonials span{
+    line-height: .8em;
+  }
+  .contact p{
+    font-size: 2em;
+  }
+  form{
+    font-size:1.5em;
+  }
+  .button{
+    font-size: 1.8em;
+  }
+  .location{
+    font-size: 1.5em;
+  }
 }
-
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+  /*Styles*/
+}
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 1.25dppx),
